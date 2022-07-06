@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#000">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/image"
+            android:background="@drawable/gradiente"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/imagemmesmo"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="@color/black"
+            app:cardCornerRadius="60dp">
+
+            <ImageView
+                android:id="@+id/ivAnimin2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:scaleX=".6"
+                android:scaleY=".6"
+                android:src="@drawable/circle" />
+
+            <ImageView
+                android:id="@+id/ivAnimin1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:scaleX=".7"
+                android:scaleY=".7"
+                android:src="@drawable/circle" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvFoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleX=".8"
+                android:scaleY=".8"
+                app:cardCornerRadius="50dp">
+
+                <ImageView
+                    android:id="@+id/imgFoto"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/images" />
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+</RelativeLayout>
